@@ -1,0 +1,2 @@
+Break the research question into 3 to 6 sub-questions.
+Return JSON: {"sub_questions": [{"id": "SQ1", "question": "...", "info_type": "factual|statistical|case_study|technical|opinion|comparison", "rationale": "..."}]}

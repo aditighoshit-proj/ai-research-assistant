@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Research Assistant: Question to Sub-questions</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Research Assistant</h1>
+    <p class="tagline">Part 1: turn a research question into sub-questions</p>
+  </header>
+
+  <main>
+    <div id="banner" class="banner" hidden></div>
+
+    <section class="card">
+      <label for="question">Research question</label>
+      <textarea id="question" rows="3" maxlength="1000"
+        placeholder="e.g. What are the major challenges companies face when deploying LLMs in production?"></textarea>
+      <div class="examples" id="examples"></div>
+      <div class="row">
+        <div class="version">
+          <label for="version">Prompt version</label>
+          <select id="version"></select>
+        </div>
+        <button id="run" type="button">Analyse &amp; decompose</button>
+      </div>
+      <p class="hint">Tip: press Ctrl+Enter to run.</p>
+    </section>
+
+    <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+    <div id="results" hidden></div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

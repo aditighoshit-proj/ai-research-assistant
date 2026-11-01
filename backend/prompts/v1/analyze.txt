@@ -1,0 +1,1 @@
+Analyze this research question. Return JSON with the fields: intent, scope, key_concepts, ambiguities, assumptions.
